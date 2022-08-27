@@ -1,0 +1,46 @@
+<h2>
+  <p>representing hard coded 'hello world'</p>
+</h2>
+<h1>
+  <p>hello world hard coded</p>
+</h1>
+<h2>
+  <p>representing 'hello world' via data biding</p>
+</h2>
+<h1>
+  <p>{{helloWorldText1}}</p>
+</h1>
+<h2>
+  <p>representing 'hello world' via property and event binding</p>
+</h2>
+<p>
+  <button (click)="toggleFunc()">{{buttonToggle}}</button>
+</p>
+<h1>
+  <p [hidden]="hidden" #ref>{{helloWorldText2}}</p>
+</h1>
+<p>Status = {{ref.hidden}}</p>
+<div id="redRow" *ngIf="hidden">&nbsp;</div>
+<div id="blueRow" *ngIf="!hidden">&nbsp;</div>
+<h2>
+  <p>representing a greeting list of a service via structural directive *ngFor</p>
+</h2>
+<div id="inlineTable">
+  <div id="inlineTableLeftPart">
+    <ul>
+      <li *ngFor="let hello of helloList">
+        <span>{{hello.part1}} {{hello.part2}}</span>
+      </li>
+    </ul>
+  </div>
+  <div id="inlineTableRightPart">
+    <p>
+      <button (click)="sortAlternated()">{{buttonSort}}</button>
+    </p>
+  </div>
+</div>
+<p>
+  <button (click)="switch2Page2()">{{buttonSwitch2Page2}}</button>
+</p>
+
+

@@ -1,0 +1,26 @@
+#redRow {
+    margin: 0;
+    padding: 0;
+    height: 5px;
+    background-color: red;
+}
+
+#blueRow {
+    margin: 0;
+    padding: 0;
+    height: 5px;
+    background-color: blue;
+}
+
+#inlineTable {
+    display: inline-table;
+}
+
+#inlineTableLeftPart {
+    float: left;
+}
+
+#inlineTableRightPart {
+    float: right;
+    margin-left: 50px;
+}
